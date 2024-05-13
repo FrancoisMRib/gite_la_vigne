@@ -2,6 +2,9 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 // import './App.css'
+import { Accueil } from "./pages/Accueil";
+// import './App.css';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom' ;
 
 export function App() {
 
@@ -9,10 +12,17 @@ export function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <div>
+    <Router>
+      <div>
       Bienvenue sur le site du Gîte la Vigne !!
-
-    </div>
+      <Switch>
+        <Route path="/">
+          <Accueil />
+        </Route>
+      </Switch>
+      </div>
+    </Router>
+    
   //   <>
   //     <div>
   //       <a href="https://vitejs.dev" target="_blank">
