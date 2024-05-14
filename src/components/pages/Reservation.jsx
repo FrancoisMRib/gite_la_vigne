@@ -1,3 +1,5 @@
 export function Reservation() {
-    <p>Accueil</p>
+    return (
+        <p>Réservation</p>
+    )
 }

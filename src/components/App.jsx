@@ -2,9 +2,24 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 // import './App.css'
+import { BrowserRouter } from "react-router-dom/cjs/react-router-dom.min.js";
+// import { BrowserRouter } from 'react-router-dom';
+
 import { Accueil } from "./pages/Accueil";
+import { Contact } from "./pages/Contact";
 // import './App.css';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom' ;
+//import { BrowserRouter as Router, Route, Switch } from 'react-router-dom' ;
+//const root = ReactDOM.createRoot(document.querySelector("#root"));
+// const router = BrowserRouter([
+//   {
+//     path: '/',
+//     element: <div>Page d'accueil</div>
+//   },
+//   {
+//     path: '/blog',
+//     element: <div>Blog</div>
+//   }
+// ])
 
 export function App() {
 
@@ -12,16 +27,41 @@ export function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <Router>
+    
+    //<RouterProvider router={router}/>
+    <div>
+      <BrowserRouter>
       <div>
-      Bienvenue sur le site du Gîte la Vigne !!
-      <Switch>
-        <Route path="/">
-          <Accueil />
-        </Route>
-      </Switch>
+        <h1>Bienvenue sur mon application React</h1>
+
+        {/* <nav>
+          <ul>
+            <li><Link to="/">Accueil</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
+          </ul>
+        </nav> */}
+
+        <Routes>
+          <Route path="/" element={<Accueil />} />
+          <Route path="/contact" element={<Contact />} />
+
+        </Routes>
       </div>
-    </Router>
+    </BrowserRouter>
+    </div>
+    // <Router>
+    //   <div>
+    //   Bienvenue sur le site du Gîte la Vigne !!
+    //   <Switch>
+    //     <Route exact path="/">
+    //       <Accueil />
+    //     </Route>
+    //     <Route exact path="/contact">
+    //       <Contact />
+    //     </Route>
+    //   </Switch>
+    //   </div>
+    // </Router>
     
   //   <>
   //     <div>

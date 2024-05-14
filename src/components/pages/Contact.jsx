@@ -1,6 +1,9 @@
+import React from 'react';
+
 export function Contact () {
-    <div>
-        <title>Contact</title>
+    return (
+        <div>
+        <h1>Contact</h1>
         <p>Veuillez nous contacter par mail</p>
         <div>
             <p>     Contactez-nous par mail afin de pouvoir réserver au plus vite, en</p>
@@ -10,4 +13,6 @@ export function Contact () {
             <p>Myriam Zidel-Cauffet</p>
         </div>
     </div>
+    )
+    
 }
