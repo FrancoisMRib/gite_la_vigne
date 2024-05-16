@@ -8,8 +8,8 @@ import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    < Header />
+    {/* < Header /> */}
     < App />
-    < Footer/>
+    {/* < Footer/> */}
   </React.StrictMode>,
 )

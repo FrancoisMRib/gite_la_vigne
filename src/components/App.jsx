@@ -7,6 +7,8 @@ import { BrowserRouter } from "react-router-dom/cjs/react-router-dom.min.js";
 
 import { Accueil } from "./pages/Accueil";
 import { Contact } from "./pages/Contact";
+import { DecouvGite } from "./pages/DecouvGite";
+import { DecReg } from "./pages/DecouvRegion";
 // import './App.css';
 //import { BrowserRouter as Router, Route, Switch } from 'react-router-dom' ;
 //const root = ReactDOM.createRoot(document.querySelector("#root"));
@@ -27,28 +29,38 @@ export function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    
-    //<RouterProvider router={router}/>
     <div>
-      <BrowserRouter>
-      <div>
-        <h1>Bienvenue sur mon application React</h1>
-
-        {/* <nav>
-          <ul>
-            <li><Link to="/">Accueil</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
-          </ul>
-        </nav> */}
-
-        <Routes>
-          <Route path="/" element={<Accueil />} />
-          <Route path="/contact" element={<Contact />} />
-
-        </Routes>
-      </div>
-    </BrowserRouter>
+      {/* < Accueil /> */}
+      {/* < Contact /> */}
+      < DecouvGite />
+      {/* < DecReg /> */}
     </div>
+    
+    // Version avec le ROUTER
+    //<RouterProvider router={router}/>
+    // <div>
+    //   <BrowserRouter>
+    //   <div>
+    //     <h1>Bienvenue sur mon application React</h1>
+
+    //     {/* <nav>
+    //       <ul>
+    //         <li><Link to="/">Accueil</Link></li>
+    //         <li><Link to="/contact">Contact</Link></li>
+    //       </ul>
+    //     </nav> */}
+
+    //     <Routes>
+    //       <Route path="/" element={<Accueil />} />
+    //       <Route path="/contact" element={<Contact />} />
+
+    //     </Routes>
+    //   </div>
+    // </BrowserRouter>
+    // </div>
+
+
+    // VERSION D'APRES GRAFIKART (2)
     // <Router>
     //   <div>
     //   Bienvenue sur le site du Gîte la Vigne !!
