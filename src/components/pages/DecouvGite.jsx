@@ -25,8 +25,11 @@ Accès internet<br></br>
         <p>
 
         </p>
-    
+            <button>
+                Découvrir les avis de nos anciens vacanciers</button>
+            <button>Découvrez comment rejoindre le gîte</button>
         </div>
+        
     )
     
 }

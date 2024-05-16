@@ -9,6 +9,7 @@ import { Accueil } from "./pages/Accueil";
 import { Contact } from "./pages/Contact";
 import { DecouvGite } from "./pages/DecouvGite";
 import { DecReg } from "./pages/DecouvRegion";
+import { LivreDor } from "./pages/LivreDor";
 // import './App.css';
 //import { BrowserRouter as Router, Route, Switch } from 'react-router-dom' ;
 //const root = ReactDOM.createRoot(document.querySelector("#root"));
@@ -32,7 +33,9 @@ export function App() {
     <div>
       {/* < Accueil /> */}
       {/* < Contact /> */}
-      < DecouvGite />
+      < DecReg />
+      < LivreDor />
+      {/* < DecouvGite /> */}
       {/* < DecReg /> */}
     </div>
     
